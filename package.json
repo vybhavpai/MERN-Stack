@@ -1,0 +1,35 @@
+{
+  "name": "mern-stack",
+  "version": "1.0.0",
+  "description": "Udemy Course Mern stack ",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "noder server",
+    "server": "nodemon server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vybhavpai/MERN-Stack-.git"
+  },
+  "author": "Vybhav Pai",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/vybhavpai/MERN-Stack-/issues"
+  },
+  "homepage": "https://github.com/vybhavpai/MERN-Stack-#readme",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "config": "^3.3.6",
+    "express": "^4.17.1",
+    "express-validator": "^6.11.1",
+    "gravatar": "^1.8.1",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.12.11",
+    "request": "^2.88.2"
+  },
+  "devDependencies": {
+    "concurrently": "^6.2.0",
+    "nodemon": "^2.0.7"
+  }
+}
