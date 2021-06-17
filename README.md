@@ -8,3 +8,4 @@ This repo, is a part of [My experiments](https://github.com/vybhavpai/React-Lear
 4. June 4, 2021: Completed the profiles section of the course, was quite nice and involved. Also learnt about how we can use github apis to fetch relevant data.
 5. June 7, 2021: Completed all the routes asscoiated with posts, which marked the end of work on backend side of things. Will start with Front end hereafter.
 6. June 14, 2021: Completed the setup of React of the project, quite alot of the front end was already written and given in html. He has a [tutorial](https://www.youtube.com/watch?v=IFM9hbapeA0&list=PLillGF-Rfqba3xeEvDzIcUCxwMlGiewfV) on building the front end
+7. June 17, 2021: Completed User Authentication, at this point you start to get used to how the front end and back end interact with each other. Alot of http requests are made using the axios library.
