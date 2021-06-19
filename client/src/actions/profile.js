@@ -1,6 +1,6 @@
 import axios from 'axios';
 import { setAlert } from './alert';
-import { PROFILE_ERROR, GET_PROFILE } from './types';
+import { PROFILE_ERROR, GET_PROFILE, UPDATE_PROFILE } from './types';
 
 //Get users profile
 export const getCurrentProfile = () => async dispatch => {
@@ -52,4 +52,70 @@ export const createProfile = (formData, history, edit=false) => async dispatch =
         });
     }
 
+}
+
+// Add experience
+export const addExperience = (formData, history) => async dispatch => {
+
+    try {
+        const config = {
+            headers: {
+                'Content-Type': 'application/json'
+            }
+        }
+
+        const res = await axios.put('/api/profile/experience', formData, config);
+        dispatch({
+            type: UPDATE_PROFILE,
+            payload: res.data
+        });
+
+        dispatch(setAlert('Experience Added', 'success'));
+        history.push('/dashboard');
+
+    } catch (error) {
+
+        const errors = error.response.data.errors;
+        if(errors) {
+            errors.forEach( error => dispatch(setAlert(error.msg, 'danger')));
+        }
+
+        dispatch({
+            type: PROFILE_ERROR,
+            payload: {msg: error.response.statusText, status: error.response.status}
+        });
+    }
+}
+
+// Add education
+export const addEducation = (formData, history) => async dispatch => {
+
+    try {
+        const config = {
+            headers: {
+                'Content-Type': 'application/json'
+            }
+        }
+
+        const res = await axios.put('/api/profile/education', formData, config);
+        dispatch({
+            type: UPDATE_PROFILE,
+            payload: res.data
+        });
+
+        dispatch(setAlert('Education Added', 'success'));
+        history.push('/dashboard');
+
+    } catch (error) {
+
+        const errors = error.response.data.errors;
+        if(errors) {
+            errors.forEach( error => dispatch(setAlert(error.msg, 'danger')));
+        }
+
+        dispatch({
+            type: PROFILE_ERROR,
+            payload: {msg: error.response.statusText, status: error.response.status}
+        });
+    }
 }
