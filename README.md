@@ -12,3 +12,4 @@ This repo, is a part of [My experiments](https://github.com/vybhavpai/React-Lear
 8. June 19, 2021: The Dashboard section is the longest one, about 2 hours, but it deals with the core component of the application, almost done with it, currently working on the education and experience sections.
 9. June 20, 2021: Completed the Dashboard section, quite involved. Three more sections left after this for the end of the course, looking to complete it before the next weekend is here.
 10. June 21, 2021: Completed the Profile section. There seems to be an issue with the fetching of github repos for a given user when displaying the profile. I think its cause the server was hit like every other second cause of some screw up in the useEfferct hook.
+11. June 22, 2021: Working on the posts section, came across some error when deleting the posts. gonna wait for next vid to add post and checck the error.
