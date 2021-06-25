@@ -1,0 +1,6 @@
+{
+    "mongoURI": "mongodb+srv://vybhavpai:R3Zp5mmWoUlHzERY@cluster0.5d6w6.mongodb.net/MernStackDatabase?retryWrites=true&w=majority",
+    "jwtSecret": "paissecrettoken",
+    "githubClientId": "fc5525ff28113480bc14",
+    "githubSecret": "42d3ba8fea5efbad551e2802a62990354263d146"
+}
