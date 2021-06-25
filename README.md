@@ -13,3 +13,4 @@ This repo, is a part of [My experiments](https://github.com/vybhavpai/React-Lear
 9. June 20, 2021: Completed the Dashboard section, quite involved. Three more sections left after this for the end of the course, looking to complete it before the next weekend is here.
 10. June 21, 2021: Completed the Profile section. There seems to be an issue with the fetching of github repos for a given user when displaying the profile. I think its cause the server was hit like every other second cause of some screw up in the useEfferct hook.
 11. June 22, 2021: Working on the posts section, came across some error when deleting the posts. gonna wait for next vid to add post and checck the error.
+12. June 25, 2021: Completed building the entire application, only left wuth deployment using heroku. Learnt alot in the course, proper one for me!!
